@@ -1,14 +1,15 @@
-package org.generation.BdGames.repository;
+package org.generation.game.repository;
 
 import java.util.List;
 
-import org.generation.BdGames.model.Produto;
+import org.generation.game.model.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
+
+	public List<Produto> findAllByNomeContainingIgnoreCase (String nome);
+	public List<Produto> findAllByPreco (float preco);
 	
-			public List<Produto> findAllByTituloContainingIgonreCase (String titulo);
-			
-			}
+}

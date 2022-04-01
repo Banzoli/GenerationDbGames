@@ -1,13 +1,13 @@
-package org.generation.BdGames;
+package org.generation.game;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BdGamesApplication {
+public class LojaDeGamesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BdGamesApplication.class, args);
+		SpringApplication.run(LojaDeGamesApplication.class, args);
 	}
 
 }
